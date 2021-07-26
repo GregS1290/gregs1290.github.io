@@ -1,0 +1,22 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer {
+  padding-top: 1rem;
+  background-color: $footer;
+}
+
+.footer-sm {
+  a {
+    color: $white;
+
+    i {
+      font-size: 1rem;
+      margin-left: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
