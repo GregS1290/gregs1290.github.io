@@ -11024,5 +11024,20 @@ textarea.form-control-lg {
     font-size: 1.6rem;
   }
 }
+.footer-sm span {
+  color: #fff;
+}
+.footer-sm span i {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+@media (min-width: 576px) {
+  .footer-sm span i {
+    font-size: 1.6rem;
+  }
+}
+.footer-sm span .text {
+  margin-left: 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */

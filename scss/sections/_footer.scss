@@ -19,4 +19,20 @@
       }
     }
   }
+  span {
+    color: $white;
+
+    i {
+      font-size: 1rem;
+      margin-left: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1.6rem;
+      }
+    }
+
+    .text {
+      margin-left: 1rem;
+    }
+  }
 }
