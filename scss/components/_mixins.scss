@@ -11,6 +11,14 @@
   );
 }
 
+@mixin greengradient {
+  background: linear-gradient(
+    to right,
+    rgba($green-light, 0.95),
+    rgba($neon, 0.95)
+  );
+}
+
 //absolute center
 
 @mixin absoluteCenter {

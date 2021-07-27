@@ -9,6 +9,10 @@
     display: inline-block;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to right, $green-light, $neon);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   &--description {
@@ -57,7 +61,7 @@
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
     display: inline-block;
-    background-image: linear-gradient(to right, $primary, $secondary);
+    background-image: linear-gradient(to right, $green-light, $neon);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
