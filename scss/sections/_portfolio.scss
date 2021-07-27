@@ -42,6 +42,21 @@
         text-transform: uppercase;
         display: block;
       }
+
+      a {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+          transform: scale(1.1);
+          color: $neon;
+          @include transitionProperty;
+        }
+      }
+
+      p {
+        font-size: 0.75rem;
+      }
     }
   }
 
