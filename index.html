@@ -587,17 +587,16 @@
 
     <script src="/assets/vendors/js/glightbox.min.js"></script>
     <script type="text/javascript">
-      const videoLightbox = GLightbox({
-        selector: '.youtube-lightbox',
-        touchNavigation: false,
-        plyr: {
-          config: {
-            ratio: '16:9',
-            youtube: {
-              autoplay: true,
-            },
-          },
-        },
+      const lightbox = GLightbox({
+        elements: [
+          {
+            'href': 'https://www.youtube.com/watch?v=fGNbbOQc9iA',
+            'type': 'video',
+            'source': 'youtube',
+            'width': 900
+          }
+        ],
+        autoplayVideos: true;
       });
     </script>
     <script
