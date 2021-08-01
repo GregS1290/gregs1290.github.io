@@ -74,7 +74,7 @@
           <!-- START CONTENT FOR INTRO -->
           <div class="col-md-6 intros text-start"></div>
           <h1 class="display-2">
-            <span class="display-2--intro">Hello World! I'm Greg!</span>
+            <span class="display-2--intro">Hi! I'm Greg!</span>
             <span class="display-2--description lh-base"
               >Software Engineer, Pharmacist, Lifelong Learner, Proud New
               Yorker, Runner & self proclaimed coffee enthusiast</span
@@ -587,13 +587,17 @@
 
     <script src="/assets/vendors/js/glightbox.min.js"></script>
     <script type="text/javascript">
-      const lightbox = GLightbox({
-        href: 'https://www.youtube.com/watch?v=fGNbbOQc9iA',
-        type: 'video',
-        source: 'youtube',
-        width: 900,
-        autoPlayVideos: 'true',
+      const videoLightbox = GLightbox({
+        selector: '.youtube-lightbox',
         touchNavigation: false,
+        plyr: {
+          config: {
+            ratio: '16:9',
+            youtube: {
+              autoplay: true,
+            },
+          },
+        },
       });
     </script>
     <script
@@ -603,3 +607,11 @@
     ></script>
   </body>
 </html>
+<!--
+
+href: 'https://www.youtube.com/watch?v=fGNbbOQc9iA',
+        type: 'video',
+        source: 'youtube',
+        width: 900,
+        autoPlayVideos: 'true',
+        touchNavigation: false, -->
